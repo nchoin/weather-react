@@ -31,15 +31,25 @@ h1.weatherApp {
 .Search {
   text-align: center;
 }
-
-li {
+p.summary{
+   margin-bottom: 10px;
+}
+p.forecastDetails {
+  font-family: sans-serif;
+  color: darkslategray;
+  font-size: 1.3em;
+ text-align: center;
+ margin-top: 1px;
+ margin-bottom: 1px;
+}
+/* li {
   list-style: none;
   font-family: sans-serif;
   color: darkslategray;
   font-size: 1.3em;
   padding-left: 0;
   margin-left: 0;
-}
+} */
 p.summary {
   font-size: 1.5em;
   color: darkslategray;

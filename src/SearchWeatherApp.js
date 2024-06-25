@@ -14,15 +14,22 @@ export default function SearchWeatherApp() {
     setForecast(
       <div>
         <p className="summary">The current weather in {city} is: </p>
-        <ul className="forecast">
-          <li>Temperature: {Math.round(response.data.main.temp)}°F</li>
-          <li>Conditions: {response.data.weather[0].description}</li>
-          <li>Wind: {Math.round(response.data.wind.speed)} mph</li>
-          <li>Humidity: {response.data.main.humidity}%</li>
-          <li>
-            <img src={icon} alt={response.data.weather[0].description} />
-          </li>
-        </ul>
+
+        <p className="forecastDetails">
+          Temperature: {Math.round(response.data.main.temp)}°F
+        </p>
+        <p className="forecastDetails">
+          Conditions: {response.data.weather[0].description}
+        </p>
+        <p className="forecastDetails">
+          Wind: {Math.round(response.data.wind.speed)} mph
+        </p>
+        <p className="forecastDetails">
+          Humidity: {response.data.main.humidity}%
+        </p>
+        <p className="forecastDetails">
+          <img src={icon} alt={response.data.weather[0].description} />
+        </p>
       </div>
     );
   }
