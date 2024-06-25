@@ -45,3 +45,11 @@ p.summary {
   color: darkslategray;
   font-weight: 600;
 }
+.aboutFooter{
+    font-size: .7em;
+    color: cadetblue;
+    font-weight: 600;
+}
+a.linkFooter{
+    color: darkslategray;
+}
